@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to group project
 
 You can use the [editor on GitHub](https://github.com/rioto9858/cs547-CTR-prediction/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
