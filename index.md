@@ -1,4 +1,4 @@
-## Welcome to group project
+## Welcome to Group project
 
 You can use the [editor on GitHub](https://github.com/rioto9858/cs547-CTR-prediction/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -11,9 +11,6 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
 - Bulleted
 - List
