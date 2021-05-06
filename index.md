@@ -17,4 +17,4 @@ xDeepFM use a Compressed Interaction Network (CIN) to learn both low and high or
 ### Model Structure
 
 ### Results
-$x_i^2$
+`$x_i^2$`
