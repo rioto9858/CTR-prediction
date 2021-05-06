@@ -1,4 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 # Inroduction
 
 Display advertising can give the company much more benifit. Modern advertising recommendation mechanism predict the users' behavior by predicting advertisement Click-Through Rate (CTR). By giving a user and the page he is visiting, the algorithm will come with the probability that he will click on the given advertisement. The algorithm would make a huge profit to the companies by doing this.
@@ -11,11 +10,11 @@ The project is a recommendation model, even though we are predicting CTR. We wou
 ## xDeepFM
 ### Model Structure
 
-xDeepFM use a Compressed Interaction Network (CIN) to learn both low and high order feature interaction explicity and use a Multilayer Perceptron (MLP) to learn feature interaction implicitly. In each layer of CIN, first compute outer products between http://mathurl.com/y2f3kpgg and $x_0$ to get a tensor $Z_{k+1}$, then use a 1D convolutional layer to learn feature maps $H_{k+1}$ on this tensor. Finally, apply sum polling on all the feature maps $H_k$ to get one vector. The vector is used to compute the logit that CIN contributes.
+xDeepFM use a Compressed Interaction Network (CIN) to learn both low and high order feature interaction explicity and use a Multilayer Perceptron (MLP) to learn feature interaction implicitly. In each layer of CIN, first compute outer products between <img src="http://www.sciweavers.org/tex2img.php?eq=%20x%5E%7Bk%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt=" x^{k} " width="24" height="19" /> and $x_0$ to get a tensor $Z_{k+1}$, then use a 1D convolutional layer to learn feature maps $H_{k+1}$ on this tensor. Finally, apply sum polling on all the feature maps $H_k$ to get one vector. The vector is used to compute the logit that CIN contributes.
 ### Results
 
 ## AFM
 ### Model Structure
 
 ### Results
-$$ x^{y^z}=(1+{\rm e}^x)^{-2xy^w} $$
+
