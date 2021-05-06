@@ -1,15 +1,3 @@
-<head>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [['$','$']]
-            }
-        });
-    </script>
-</head>
-
 # Inroduction
 
 Display advertising can give the company much more benifit. Modern advertising recommendation mechanism predict the users' behavior by predicting advertisement Click-Through Rate (CTR). By giving a user and the page he is visiting, the algorithm will come with the probability that he will click on the given advertisement. The algorithm would make a huge profit to the companies by doing this.
