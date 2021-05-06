@@ -10,8 +10,8 @@ The project is a recommendation model, even though we are predicting CTR. We wou
 ## xDeepFM
 ### Model Structure
 
-xDeepFM use a Compressed Interaction Network (CIN) to learn both low and high order feature interaction explicity and use a Multilayer Perceptron (MLP) to learn feature interaction implicitly. In each layer of CIN, first compute outer products between![x^k](https://user-images.githubusercontent.com/49369552/117372664-7140dd00-aefc-11eb-9723-e015527501e2.png)
- x^k and x_0 to get a tensor Z_{k+1}, then use a 1D convolutional layer to learn feature maps H_{k+1} on this tensor. Finally, apply sum polling on all the feature maps H_k to get one vector. The vector is used to compute the logit that CIN contributes.
+xDeepFM use a Compressed Interaction Network (CIN) to learn both low and high order feature interaction explicity and use a Multilayer Perceptron (MLP) to learn feature interaction implicitly. In each layer of CIN, first compute outer products between![x^k](https://user-images.githubusercontent.com/49369552/117372664-7140dd00-aefc-11eb-9723-e015527501e2.png) and ![x_0](https://user-images.githubusercontent.com/49369552/117372815-b9f89600-aefc-11eb-92fa-43127c234201.png)
+x_0 to get a tensor Z_{k+1}, then use a 1D convolutional layer to learn feature maps H_{k+1} on this tensor. Finally, apply sum polling on all the feature maps H_k to get one vector. The vector is used to compute the logit that CIN contributes.
 ### Results
 
 ## AFM
