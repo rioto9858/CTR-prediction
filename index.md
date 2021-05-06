@@ -17,3 +17,4 @@ xDeepFM use a Compressed Interaction Network (CIN) to learn both low and high or
 ### Model Structure
 
 ### Results
+$$ x^{y^z}=(1+{\rm e}^x)^{-2xy^w} $$
