@@ -22,8 +22,14 @@ xDeepFM use a Compressed Interaction Network (CIN) to learn both low and high or
 
 ### Results
 
-## AFM
+## AFM (Attentional Factorization Machine)
 ### Model Structure
+
+Attentional Factorization Machine (AFM) is a variant of FM. Traditional FM sums the inner product of embedding vector uniformly. AFM can be seen as weighted sum of feature interactions. The weight is learned by a small MLP.
+
+![AFM](https://user-images.githubusercontent.com/49369552/117373856-a4846b80-aefe-11eb-9b8a-f9244c2541c6.png)
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of AFM </center> 
+
 
 ### Results
 
