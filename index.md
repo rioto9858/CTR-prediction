@@ -16,6 +16,7 @@ xDeepFM use a Compressed Interaction Network (CIN) to learn both low and high or
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> Components and architecture of the Compressed Interaction Network (CIN) </center> 
 
 ![xDeepFM](https://user-images.githubusercontent.com/49369552/117373349-a26ddd00-aefd-11eb-90dc-940da7fb04fd.png)
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of xDeepFM </center> 
 
 
 
