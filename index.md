@@ -12,7 +12,8 @@ The project is a recommendation model, even though we are predicting CTR. We wou
 
 xDeepFM use a Compressed Interaction Network (CIN) to learn both low and high order feature interaction explicity and use a Multilayer Perceptron (MLP) to learn feature interaction implicitly. In each layer of CIN, first compute outer products between x^k and x_0 to get a tensor Z_{k+1}, then use a 1D convolutional layer to learn feature maps H_{k+1} on this tensor. Finally, apply sum polling on all the feature maps H_k to get one vector. The vector is used to compute the logit that CIN contributes.
 
-![CIN](https://user-images.githubusercontent.com/49369552/117373022-18be0f80-aefd-11eb-8126-a7473c07aaf6.png  "Components and architecture of the Compressed Interaction Network (CIN)" )
+![CIN](https://user-images.githubusercontent.com/49369552/117373022-18be0f80-aefd-11eb-8126-a7473c07aaf6.png)
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">Components and architecture of the Compressed Interaction Network (CIN)</center> 
 
 ### Results
 
