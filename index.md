@@ -6,6 +6,13 @@ The algorithm would help the company to meet the users' needs and make the funct
 
 The project is a recommendation model, even though we are predicting CTR. We would like to show the potential users the advertisements have higher probability to be clicked. It is the recommender system which is considered one among the most powerful tools in the present digital world. In the field of recommender systems there are various methods and approaches which have been implemented. We use xDeepFM and AFM in our project. They are a state-of-the-art algorithms which has been widely used in industry.
 
+
+# DataSet
+
+We train and evaluate our model based on the **Criteo**[Criteo](https://www.kaggle.com/c/criteo-display-ad-challenge
+) dataset and the **Avazu** dataset
+
+
 # Algorithms Detail
 ## DeepFM
 ### Model Structure
