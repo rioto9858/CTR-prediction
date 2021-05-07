@@ -9,8 +9,8 @@ The project is a recommendation model, even though we are predicting CTR. We wou
 
 # DataSet
 
-We train and evaluate our model based on the **Criteo**[Criteo](https://www.kaggle.com/c/criteo-display-ad-challenge
-) dataset and the **Avazu** dataset
+We train and evaluate our model based on the [Criteo](https://www.kaggle.com/c/criteo-display-ad-challenge
+) dataset and the [Avazu](https://www.kaggle.com/c/avazu-ctr-prediction/overview) dataset.
 
 
 # Algorithms Detail
