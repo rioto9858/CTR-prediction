@@ -29,6 +29,7 @@ yFM (output from FM component) and yDNN (output from Deep component):
 
 yFM formula:
 
+
 ![yfm](https://user-images.githubusercontent.com/49369552/117380288-f253a080-af0b-11eb-8fe2-e787c83f67f3.png)
 
 
