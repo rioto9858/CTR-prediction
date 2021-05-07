@@ -7,20 +7,20 @@ The algorithm would help the company to meet the users' needs and make the funct
 The project is a recommendation model, even though we are predicting CTR. We would like to show the potential users the advertisements have higher probability to be clicked. It is the recommender system which is considered one among the most powerful tools in the present digital world. In the field of recommender systems there are various methods and approaches which have been implemented. We use xDeepFM and AFM in our project. They are a state-of-the-art algorithms which has been widely used in industry.
 
 # Algorithms Detail
-## xDeepFM
+## DeepFM
 ### Model Structure
 
-xDeepFM use a Compressed Interaction Network (CIN) to learn both low and high order feature interaction explicity and use a Multilayer Perceptron (MLP) to learn feature interaction implicitly. In each layer of CIN, first compute outer products between x^k and x_0 to get a tensor Z_{k+1}, then use a 1D convolutional layer to learn feature maps H_{k+1} on this tensor. Finally, apply sum polling on all the feature maps H_k to get one vector. The vector is used to compute the logit that CIN contributes.
+Compaing to Wide & Deep Learning, DeepFM use FM (Factorization Machine) instead of LR (logistic Regression) in the wide part and use concatenation of embadding vectors as the input of MLP (Multilayer Perceptron) in the deep part. DeepFM get over the need of feature engineering besides raw features and realized an end-to-end model with learning in both low and high order feature interactions. DeepFM trains a deep component and an FM component jointly. It does not need pre-training and introduces a sharing strategy of feature embedding to avoid feature engineering. Based on these, DeepFM gains a performance improvement with a lot of advantages.
 
-![CIN](https://user-images.githubusercontent.com/49369552/117373022-18be0f80-aefd-11eb-8126-a7473c07aaf6.png)
-<center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> Components and architecture of the Compressed Interaction Network (CIN) </center> 
+![DeepFM](https://user-images.githubusercontent.com/49369552/117379697-9c322d80-af0a-11eb-97fd-413983fa283b.png)
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of DeepFM </center> 
 
-![xDeepFM](https://user-images.githubusercontent.com/49369552/117373349-a26ddd00-aefd-11eb-90dc-940da7fb04fd.png)
-<center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of xDeepFM </center> 
+![formula](https://user-images.githubusercontent.com/49369552/117379926-2e3a3600-af0b-11eb-872e-c27b039460f3.png)
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> yFM (output from FM component) and yDNN (output from Deep component) </center> 
 
+![yfm](https://user-images.githubusercontent.com/49369552/117380288-f253a080-af0b-11eb-8fe2-e787c83f67f3.png)
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> yFM formula </center>
 
-
-### Results
 
 ## AFM (Attentional Factorization Machine)
 ### Model Structure
@@ -29,7 +29,3 @@ Attentional Factorization Machine (AFM) is a variant of FM. Traditional FM sums 
 
 ![AFM](https://user-images.githubusercontent.com/49369552/117373856-a4846b80-aefe-11eb-9b8a-f9244c2541c6.png)
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of AFM </center> 
-
-
-### Results
-
