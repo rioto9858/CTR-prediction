@@ -15,11 +15,13 @@ Compaing to Wide & Deep Learning, DeepFM use FM (Factorization Machine) instead 
 ![DeepFM](https://user-images.githubusercontent.com/49369552/117379697-9c322d80-af0a-11eb-97fd-413983fa283b.png)
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of DeepFM </center> 
 
+yFM (output from FM component) and yDNN (output from Deep component):
 ![formula](https://user-images.githubusercontent.com/49369552/117379926-2e3a3600-af0b-11eb-872e-c27b039460f3.png) 
-<center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> yFM (output from FM component) and yDNN (output from Deep component) </center> 
-  
+
+
+yFM formula:
 ![yfm](https://user-images.githubusercontent.com/49369552/117380288-f253a080-af0b-11eb-8fe2-e787c83f67f3.png)
-<center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> yFM formula </center>
+
 
 
 ## AFM (Attentional Factorization Machine)
