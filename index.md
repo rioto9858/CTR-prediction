@@ -9,9 +9,19 @@ The project is a recommendation model, even though we are predicting CTR. We wou
 
 # DataSet
 
-We train and evaluate our model based on the [Criteo](https://www.kaggle.com/c/criteo-display-ad-challenge
-) dataset and the [Avazu](https://www.kaggle.com/c/avazu-ctr-prediction/overview) dataset.
+We train and evaluate our model based on the [Criteo](https://www.kaggle.com/c/criteo-display-ad-challenge) dataset and the [Avazu](https://www.kaggle.com/c/avazu-ctr-prediction/overview) dataset. The Criteo dataset is a well-know public dataset to benchmark the most accurate algorithms for CTR estimation. Different from the Criteo dataset, Avazu dataset is applied to a mobile ad situation. It is used to predict if a mobile ad will be clicked.
 
+The Criteo Dataset is a public dataset with the following data fields:
+* Label : Target variable that indicates if an ad was clicked (1) or not (0).
+* L1-L13 : A total of 13 columns of integer features (mostly count features).
+* C1-C26 : A total of 26 columns of categorical features. The values of these features have been hashed onto 32 bits for anonymization purposes. 
+
+The Avazu Dataset is also a public dataset with the following data fields:
+* id : ad identifier
+* click : Target variable that indicates if an ad was clicked (1) or not (0).
+* hour : format is YYMMDDHH, so 14091123 means 23:00 on Sept. 11, 2014 UTC.
+* C1, C14-C21 : some anonymized categorical variable
+* C2-C13: categorical variable named as banner_pos, site_id, site_domain, site_category, app_id, app_domain, app_category, device_id, device_ip, device_model, device_type and device_conn_type
 
 # Algorithms Detail
 ## DeepFM
@@ -23,6 +33,7 @@ Compaing to Wide & Deep Learning, DeepFM use FM (Factorization Machine) instead 
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of DeepFM </center> 
 
 yFM (output from FM component) and yDNN (output from Deep component):
+
 
 ![formula](https://user-images.githubusercontent.com/49369552/117379926-2e3a3600-af0b-11eb-872e-c27b039460f3.png) 
 
